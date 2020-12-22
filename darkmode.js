@@ -2,18 +2,21 @@ const button = document.getElementById("dark-mode-button");
 const root = document.querySelector(':root');
 const stylesheet = document.styleSheets[1];
 
+//On first visit
 if (!localStorage.getItem('theme'))
     localStorage.setItem('theme', 'light');
 setTheme();
 
-button.addEventListener("click", function() {
+//On click toggle the variable
+button.addEventListener("click", function () {
     if (localStorage.getItem('theme') == 'light')
         localStorage.setItem('theme', 'dark');
     else
         localStorage.setItem('theme', 'light');
     setTheme();
-  });
+});
 
+//Apply changes to the stylesheet
 function setTheme() {
     if (localStorage.getItem('theme') == 'dark') {
         root.style.setProperty('--text-color', 'rgb(255, 255, 255)');

@@ -6,7 +6,7 @@
   --background-color: rgb(20, 33, 61);
   
   /* Light theme */
-  
+
   --text-color: rgb(14, 21, 21);
   --accent-color: rgb(124, 124, 125);
   --background-color: rgb(236, 238, 240);
@@ -16,6 +16,9 @@ body {
   background: var(--background-color);
   color: var(--text-color);
   font-family: 'Montserrat', sans-serif;
+  transition-property: color, background-color, border-color;
+  transition-duration: 400ms;
+  transition-timing-function:ease;
 }
 
 header {
@@ -66,7 +69,9 @@ nav>h4 {
 
 a {
   color: var(--text-color);
-  transition-property: text-decoration-color 500ms ease;
+  transition-property: text-decoration-color, font-size;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
 }
 
 a:hover {
@@ -146,7 +151,7 @@ ol {
 }
 
 li {
-  list-style-image: url(/check-square.svg);
+  list-style: url(/check-square.svg);
   margin: 10px 25px;
 }
 

@@ -22,13 +22,13 @@ function setTheme() {
         root.style.setProperty('--text-color', 'rgb(255, 255, 255)');
         root.style.setProperty('--accent-color', 'rgb(251, 160, 17)');
         root.style.setProperty('--background-color', 'rgb(20, 33, 61)');
-        stylesheet.cssRules[22].style.listStyle = 'url(images/check-square-dark.svg)';
+        stylesheet.cssRules[23].style.listStyle = 'url(images/check-square-dark.svg';
     }
 
     else {
         root.style.setProperty('--text-color', 'rgb(14, 21, 21)');
         root.style.setProperty('--accent-color', 'rgb(124, 124, 125)');
         root.style.setProperty('--background-color', 'rgb(236, 238, 240)');
-        stylesheet.cssRules[22].style.listStyle = 'url(images/check-square.svg)';
+        stylesheet.cssRules[23].style.listStyle = 'url(images/check-square.svg)';
     }
 }

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@400;500&display=swap"
-  rel="stylesheet">
+    rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
   <title>Curriculum Vitae</title>
 </head>
@@ -42,13 +42,158 @@
   </nav>
 
   <main>
-    <h1 class="content-title">Présentation</h1>
-    <div class="content">
-      <img src="/me.jpeg" alt="astronaut on the moon">
-      <p class="centered-text">Je suis Hazem, un étudiant en sciences informatiques chez ISSAT Sousse.
+    <div id="presentation" class="section">
+      <h1 class="section-title">Présentation</h1>
+      <img id="me" src="/me.jpeg" alt="astronaut on the moon">
+      <p class="centered-text">Je suis Hazem, un étudiant en sciences informatiques á ISSAT Sousse.
         Bienvenu dans mon portfolio. <br>
         Addresse: 405 Übermensch Straße<br>
         Github: <a href="https://github.com/hazemkaroui">@hazemkaroui</a></p>
+    </div>
+
+    <div id="formation" class="section">
+      <h1 class="section-title">Formation</h1>
+      <p class="centered-text">Quelques formations que j'ai completé</p>
+
+      <ol>
+        <li><b>Freecodecamp Responsive Web Design Certificate</b></li>
+        <li>Date: 01/01/2020 - 01/03/2020</li>
+        <li>Periode: <u>2 mois</u></li>
+      </ol>
+
+      <ol>
+        <li><b>The Odin Project Front-end Developer Path</b></li>
+        <li>Date: 01/03/2020 - 30/05/2020</li>
+        <li>Periode: <u>3 mois</u></li>
+      </ol>
+    </div>
+
+    <div id="experience" class="section">
+      <h1 class="section-title">Expérience</h1>
+      <p class="centered-text">Expériences professionnelles</p>
+
+      <table>
+        <tr>
+          <td><b>Date de:</b></td>
+          <td>01/01/2019 - 30/06/2019</td>
+        </tr>
+        <tr>
+          <td><b>Position: </b></td>
+          <td>Developpeur .Net</td>
+        </tr>
+        <tr>
+          <td><b>Entreprise:</b></td>
+          <td>Microsoft</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <td><b>Date de: </b></td>
+          <td>01/07/2019 - 30/12/2019</td>
+        </tr>
+        <tr>
+          <td><b>Position: </b></td>
+          <td>Developpeur Unity</td>
+        </tr>
+        <tr>
+          <td><b>Entreprise: </b></td>
+          <td>Tesla</td>
+        </tr>
+      </table>
+
+      <table id="third-table">
+        <tr>
+          <td><b>Date de:</b></td>
+          <td>01/01/2020 - 30/06/2020</td>
+        </tr>
+        <tr>
+          <td><b>Position: </b></td>
+          <td>Developpeur React</td>
+        </tr>
+        <tr>
+          <td><b>Entreprise: </b></td>
+          <td>Google</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="competences" class="section">
+    <h1 class="section-title">Compétences</h1>
+      <p class="centered-text">Mes compétences techniques</p>
+      <ul>
+        <li>HTML/CSS</li>
+        <li>Javascript</li>
+        <li>React</li>
+        <li>Redux</li>
+        <li>Bootstrap</li>
+        <li>Git</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>Security</li>
+      </ul>
+    </div>
+
+    <div id="divers" class="section">
+    <h1 class="section-title">Divers</h1>
+      <p class="centered-text">Autre que le developpement web:</p>
+
+      <ul>
+        <li>Passionné par l'astronomie</li>
+        <li>Membre Executif dans Cybertrace</li>
+      </ul>
+
+      <h3>Langues</h3>
+      <table class="langues">
+        <tr>
+          <td><b>Arabe</b></td>
+          <td>+++</td>
+        </tr>
+        <tr>
+          <td><b>Anglais</b></td>
+          <td>+++</td>
+        </tr>
+        <tr>
+          <td><b>Francais</b></td>
+          <td>++</td>
+        </tr>
+        <tr>
+          <td><b>Allemand</b></td>
+          <td>+</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="contact" class="section">
+    <h1 class="section-title">Contact</h1>
+      <p class="centered-text">Pour plus d'informations veuillez me contacter</p>
+      <form>
+        <table>
+          <tr>
+            <td><label for="np">Nom et Prénom</label></td>
+            <td><input class="box" id="np" type="text"><br></td>
+          </tr>
+          <tr>
+            <td><label for="email">E-mail</label></td>
+            <td><input class="box" id="email" type="email"><br></td>
+          </tr>
+          <tr>
+            <td><label for="tel">Telephone</label></td>
+            <td><input class="box" id="tel" type="tel"><br></td>
+          </tr>
+          <tr>
+            <td><label for="sujet">Sujet</label></td>
+            <td><input class="box" id="sujet" type="text"><br></td>
+          </tr>
+          <tr>
+            <td><label for="message">Message</label></td>
+            <td><textarea class="box" id="message"></textarea></td>
+          </tr>
+        </table>
+        <div class="button">
+          <input class="box" type="submit" value="Envoyer">
+        </div>
+      </form>
     </div>
   </main>
   <script src="/darkmode.js"></script>

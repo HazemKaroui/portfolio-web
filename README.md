@@ -10,4 +10,4 @@ Un petit projet pour la matiere de developpement web en HTML/CSS/JS hébergé su
 ## Á faire
 - [ ] Formulaire fonctionnelle
 
-### [Voir le site](https://hazemkaroui.github.io/portfolio-web/)
+## [Voir le site](https://hazemkaroui.github.io/portfolio-web/)

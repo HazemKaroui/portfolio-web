@@ -172,6 +172,10 @@ img {
   margin-bottom: 15px;
 }
 
+.accentuated {
+  color: var(--accent-color);
+}
+
 #third-table {
   margin-left: 20px;
 }

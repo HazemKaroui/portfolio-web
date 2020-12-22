@@ -97,11 +97,15 @@ main {
 
 .section {
   max-width: 500px;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 5px;
+}
+
+#presentation {
+  display: flex;
 }
 
 textarea {

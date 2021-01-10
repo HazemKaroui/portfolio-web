@@ -145,6 +145,31 @@ a:hover {
   text-decoration-color: var(--accent-color);
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--menu-color);
+  box-shadow: 0px 2px 4px 0px var(--accent-color);
+  z-index: 1;
+  margin-top: -15px;
+  margin-left: -10px;
+}
+
+.dropdown-content a {
+  padding: 8px 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 main {
   display: flex;
   flex-direction: column;

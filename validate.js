@@ -1,6 +1,7 @@
 function validate() {
     var email = document.myForm.email.value;
-    
+    document.getElementById("message").style.width = document.getElementById("sujet").style.width;
+
     if( document.myForm.np.value == "" ) {
        alert( "Veuillez fournir votre nom complet" );
        document.myForm.np.focus() ;
